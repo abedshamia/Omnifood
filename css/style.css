@@ -1,0 +1,140 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+--- 02 COLORS
+
+Primary: #e67e22
+Tints: #fdf2e9
+Shades: #d35400, #e74c3c
+Greys: #555
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #e67e22;
+  --tints: #f1c40f, #f39c12;
+  --shades: #d35400, #e74c3c;
+  --greys: #555;
+}
+
+body {
+  line-height: 1;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  /* Put the transition on the original state */
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--primary);
+}
+
+.btn--full:hover {
+  background-color: #cf711f;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+  transition: all 1s ease;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /* To put the border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.delivered-meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border: 3px solid #fdf2e9;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+}
+
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  font-weight: 700;
+  color: #cf711f;
+}
