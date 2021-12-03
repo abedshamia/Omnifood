@@ -115,10 +115,11 @@ Instead, 1 rem = 1em = 16px
 
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.98);
     position: absolute;
     top: 0;
     left: 0;
